@@ -20,6 +20,9 @@ app.use(bodyParser.json());
 
 app.use('/api',transactionRoute)
 app.use('/user',userRoute)
+app.get('/',(req,res)=>{
+    res.send("ledgerflow")
+})
 
 // --------------------------------------------------------------
 
